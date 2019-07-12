@@ -1,6 +1,6 @@
 FROM python:3.7-alpine
 
-ENV INSTALL_PATH /play-move-app
+ENV INSTALL_PATH /playmove-app
 RUN mkdir -p $INSTALL_PATH
 
 WORKDIR $INSTALL_PATH
@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "play-move.application:create_app()"
+CMD gunicorn -b 0.0.0.0:8000 --access-logfile - "playmove.application:create_app()"

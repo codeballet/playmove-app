@@ -1,2 +1,12 @@
-Flask==1.0.2
+Flask==1.1.1
+
+# Application server for development and production
 gunicorn==19.9
+
+# Testing and static analysis
+pytest==4.6.3
+pytest-cov==2.7.1
+flake8==3.7.8
+
+# CLI
+Click==7.0

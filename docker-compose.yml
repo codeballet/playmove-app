@@ -7,10 +7,10 @@ services:
       gunicorn -b 0.0.0.0:8000
         --access-logfile -
         --reload
-        "play-move.application:create_app()"
+        "playmove.application:create_app()"
     environment:
       PYTHONUNBUFFERED: 'true'
     volumes:
-      - '.:/play-move-app'
+      - '.:/playmove-app'
     ports:
       - '8000:8000'
