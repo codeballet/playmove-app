@@ -12,7 +12,7 @@ flake8==3.7.8
 Click==7.0
 
 # Data and workers
-redis==5.0.5
+redis==3.3.6
 celery==4.3
 
 # Forms
