@@ -13,7 +13,7 @@ Click==7.0
 
 # Data and workers
 redis==3.3.6
-celery==4.3
+celery==5.2.2
 
 # Forms
 Flask-WTF==0.14.2
